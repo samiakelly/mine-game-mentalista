@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>O Mentalista</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://pbs.twimg.com/profile_images/1306638123443654657/SPnyTux4_400x400.jpg"
+        class="page-logo"
+        alt=""
+      /><br />
+      <h1 class="page-title">Mentalista</h1>
+      <p class="page-subtitle">
+        Tente adivinhar o número escolhido entre 0 a 10,
+        <br />
+        você tem 3 tentativas.
+      </p>
+      <button type="submit" id="btn-iniciar" onclick="iniciar()">
+        Iniciar
+      </button>
+      <p class="resultado" id="menssagem"></p>
+      <div>
+        <input
+          class="input-number"
+          type="number"
+          disabled="true"
+          id="valor"
+        /><br />
+        <button
+          class="button-chutar"
+          type="submit"
+          id="btn-chutar"
+          disabled="true"
+          onclick="Chutar()"
+        >
+          Chutar
+        </button>
+      </div>
+      <h2 class="resultado" id="resultado"></h2>
+      <button
+        type="submit"
+        class="button-tentar_de-novo"
+        id="btn-tentar-de_novo"
+        onclick="recarregaPag()"
+      >
+        Tentar de novo
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

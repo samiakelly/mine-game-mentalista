@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 600px;
+  background-image: url("/dist/img/o-mentalista.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 600px;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff 50%, #eaebec 50%);
+  display: inline-block;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 10px 40px #0d1a3d;
+  opacity: .9;
+}
+
+.page-title {
+  color: #0455bb;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #282828;
+  margin-top: 16px;
+}
+
+.page-logo {
+  width: 70px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+div {
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+div .input-number {
+  width: 50px;
+}
+
+div .button-chutar {
+  margin-bottom: 7px;
+}
+
+.button-tentar_de-novo {
+  display: none;
+}
+
+input {
+  margin: 4px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #0455bb;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #68a7eb;
+}
+
+.resultado {
+  color: #282828;
+  text-align: center;
+  margin-top: 16px;
+}
+
+img {
+  width: 150px;
+}
+
+@media screen and (max-width: 1040px) {
+  body {
+    background-image: url("/dist/img/mentlista-mobile.jpg");
+  }
+
+  .container {
+    width: auto;
+  }
+
+}
