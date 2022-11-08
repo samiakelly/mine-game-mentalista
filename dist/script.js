@@ -32,7 +32,7 @@ btn.onclick = function Chutar() {
   var mensErro = ' Suas tentativas terminaram '
   var mensAcertou = 'Acertou!!'
 
-  if (tentativas > 0) {
+  if (tentativas >= 0) {
     if (chute === numeroSecreto) {
       elemento.innerHTML = mensAcertou
       elementoMenssagem.innerHTML =
